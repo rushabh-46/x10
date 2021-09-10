@@ -722,8 +722,8 @@
         <sequential>
             <!-- Can't use the untar rule in ant because it bungles symbolic links. Sigh -->
             <exec executable="${tar.exe}" dir="${bdwgc.dir}/src">
-                <arg value="xzf" />
-                <arg value="${bdwgc.platform.dir}/${bdwgc.tar}" />
+                <arg value="xvzf" />
+                <arg value="${bdwgc.dir}/${bdwgc.tar}" />
             </exec>
 
 	    <!-- Patches to apply for bdwgc version 7.4.2 -->
